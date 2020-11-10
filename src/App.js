@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Article from './components/Article'
+import articles from './articles'
+import ArticleList from "./components/ArticleList";
 function App() {
+    const greetings = 'Hello React Accordion!'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/*{greetings}
+        <Article article={articles[0]}/>*/}
+        <ArticleList articles={articles}/>
     </div>
   );
 }
